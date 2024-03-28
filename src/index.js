@@ -1,3 +1,3 @@
-"use strict";
+import { rLib } from "./richLib.js";
 
-console.log("Hello world");
+rLib.htmlIncludeAll();

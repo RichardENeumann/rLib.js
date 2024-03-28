@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Hello world")})();
+(()=>{"use strict";document.querySelectorAll("div"),console.log(document)})();
