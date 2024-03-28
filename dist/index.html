@@ -7,7 +7,24 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <div rl-include="https://vertell.net/einfuehrung.php" rl-external="true"></div>
-  <p rl-include="./test2.html"></p>
+  <header>
+    <nav>
+      <button id="btMenu1">Show Menu 1</button>
+      <button id="btMenu2">Show Menu 2</button>
+    </nav>
+    <div id="menu1">
+      <a href="">Start</a>
+      <a href="">Logout</a>
+    </div>
+    <div id="menu2">
+      <a href="">Browse</a>
+      <a href="">Checkout</a>
+    </div>
+  </header>
+
+  <main>
+    <div rl-include="test.html"></div>
+    <p rl-include="./test2.html"></p>
+  </main>
 </body>
 </html>
