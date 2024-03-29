@@ -1,7 +1,9 @@
 export function showDropdownMenu(target) {
-  target.style.display = "initial";
+  const menu = target;
+  menu.style.height = "auto";
+  menu.style.visibility = "visible";
 }
 
 export function toggleDropdownMenu(target) {
-  
+
 }
