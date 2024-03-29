@@ -1,3 +1,7 @@
-export default function showDropdownMenu(target, parent) {
-  console.log("hooray, dropdown");
+export function showDropdownMenu(target) {
+  target.style.display = "initial";
+}
+
+export function toggleDropdownMenu(target) {
+  
 }

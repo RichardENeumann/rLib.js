@@ -4,22 +4,23 @@ export async function htmlInclude(url) {
 
   try {
     const response = await fetch(url);
-    result = await response.text()
-  }
-  catch (e) {
-    result = "<p class='htmlIncludeError'>HTML include failed</p>";
+    result = await response.text();
+  } catch {
+    result = "<p>HTML include failed</p>";
   }
   return result;
 }
 
-// htmlIncludeAll() will parse the DOM for tags with the "rl-include" attribute.
-// Then it will fetch the attributes given url and replace the tag with the resulting html
+// htmlIncludeAll() will parse the DOM for tags with the "rl-include" 
+// Attribute. Then it will fetch the resource at the attribute's given 
+// URL and replace the tag with the resulting text.
 export function htmlIncludeAll() {
   const tagsWithInclude = document.querySelectorAll("[rl-include]");
   const includeRequests = Array.from(tagsWithInclude);
 
   includeRequests.forEach(async (el) => {
+    const target = el;
     const url = el.attributes["rl-include"].value;
-      el.outerHTML = await htmlInclude(url);
+    target.outerHTML = await htmlInclude(url);
   });
 }
