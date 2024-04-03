@@ -1,9 +1,8 @@
-export function showDropdownMenu(target) {
+export default function showDropdownMenu(target) {
   const menu = target;
-  menu.style.height = "auto";
-  menu.style.visibility = "visible";
-}
-
-export function toggleDropdownMenu(target) {
-
+  if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+    menu.style.maxHeight = "200px";
+  } else {
+    menu.style.maxHeight = "0px";
+  }
 }

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 header {
   padding: 8px;
@@ -20,15 +21,15 @@ button {
   padding-left: 16px;
   display: flex;
   flex-direction: row;
+
 }
 .menu {
-  padding: 4px;
-  margin: 8px;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  height: 0px;
-  visibility: hidden;
-  border: 1px solid black;
-  border-radius: 8px;
-  
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  background-color: grey;
+  transition: max-height .2s;
 }

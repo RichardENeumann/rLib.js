@@ -1,10 +1,10 @@
 import { htmlInclude, htmlIncludeAll } from "./rLib-htmlInclude.js";
-import { showDropdownMenu, toggleDropdownMenu } from "./rLib-dropdownMenu.js";
+import showDropdownMenu from "./rLib-dropdownMenu.js";
 
-export const rLib = {
+const rLib = {
   htmlInclude,
   htmlIncludeAll,
   showDropdownMenu,
-  toggleDropdownMenu,
 };
 
+export default rLib;
