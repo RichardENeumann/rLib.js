@@ -21,15 +21,17 @@ button {
   padding-left: 16px;
   display: flex;
   flex-direction: row;
-
 }
 .menu {
+  visibility: hidden;
   position: absolute;
   display: flex;
   flex-direction: column;
   height: auto;
   max-height: 0;
   overflow: hidden;
+  border-radius: 0 0 8px 8px;  
+  padding: 4px;
   background-color: grey;
-  transition: max-height .2s;
+  transition: max-height .7s;
 }
