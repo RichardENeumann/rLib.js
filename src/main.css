@@ -35,3 +35,7 @@ button {
   background-color: grey;
   transition: max-height .7s;
 }
+#imgContainer {
+  display: flex;
+  gap: 64px;
+}

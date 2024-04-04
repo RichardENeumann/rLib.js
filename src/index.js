@@ -1,4 +1,5 @@
 import "./main.css";
+import loadImagesFromFolder from "./rLib-slideshow.js";
 
 import rLib from "./richLib.js";
 
@@ -10,3 +11,5 @@ const divMenu1 = document.getElementById("menu1");
 btMenu1.addEventListener("click", () => {
   rLib.showDropdownMenu(divMenu1);
 });
+
+loadImagesFromFolder();
