@@ -5,10 +5,8 @@
 }
 header {
   padding: 8px;
-  background-color: lightblue;
-}
-header > h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
+  background-color: grey;
 }
 button {
   padding: 4px;
@@ -35,6 +33,22 @@ button {
   background-color: grey;
   transition: max-height .7s;
 }
-.slides {
+.slideshowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slides > img {
   height: 512px;
+}
+.display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
 }
