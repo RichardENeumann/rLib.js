@@ -10,6 +10,18 @@ header {
   margin-bottom: 1rem;
   background-color: darkgrey;
 }
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#slideshowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .slides > img {
   max-height: 75vh;
   max-width: 100vw;
@@ -23,7 +35,7 @@ figcaption {
   left: 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1rem;
   color: darkkhaki;
 }
 button {

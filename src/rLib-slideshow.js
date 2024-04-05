@@ -13,7 +13,7 @@ export function loadImagesFromFolder() {
     const figcaption = document.createElement("figcaption");
     figcaption.innerHTML = `Bild ${i.toString().padStart(2, "0")}`;
     figure.appendChild(figcaption);
-    
+
     imgContainer.appendChild(figure);
   }
   const images = document.getElementsByClassName("slides");
