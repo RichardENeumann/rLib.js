@@ -1,5 +1,5 @@
 // htmlInclude() will fetch the given url and return the result as text
-export async function htmlInclude(url) {
+async function htmlInclude(url) {
   let result;
 
   try {
@@ -14,7 +14,7 @@ export async function htmlInclude(url) {
 // htmlIncludeAll() will parse the DOM for tags with the "rl-include" 
 // Attribute. Then it will fetch the resource at the attribute's given 
 // URL and replace the tag with the resulting text.
-export function htmlIncludeAll() {
+export default function htmlIncludeAll() {
   const tagsWithInclude = document.querySelectorAll("[rl-include]");
   const includeRequests = Array.from(tagsWithInclude);
 

@@ -1,9 +1,8 @@
 import "./gallery.css";
 
-import rLib from "./richLib.js";
+import rLib from "./rLib.js";
 
-/* rLib.htmlIncludeAll();
-
+/*
 const btMenu1 = document.getElementById("btMenu1");
 const divMenu1 = document.getElementById("menu1");
 
@@ -12,26 +11,15 @@ btMenu1.addEventListener("click", () => {
 });
 */
 
-let index = 0;
-const numberofimages = 32;
-rLib.loadImagesFromFolder();
+rLib.htmlIncludeAll();
+rLib.galleryLoad();
 
-const btLeft = document.getElementById("btLeft");
+const btLeft = document.getElementById("btGalleryLeft");
 btLeft.addEventListener("click", () => {
-  if (index === 0) {
-    index = numberofimages;
-  } else {
-    index -= 1;
-  }
-  rLib.showImage(index);
+  rLib.galleryShift(-1);
 });
 
-const btRight = document.getElementById("btRight");
+const btRight = document.getElementById("btGalleryRight");
 btRight.addEventListener("click", () => {
-  if (index === 32) {
-    index = 0;
-  } else {
-    index += 1;
-  }
-  rLib.showImage(index);
+  rLib.galleryShift(1);
 });
